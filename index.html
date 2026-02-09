@@ -1,23 +1,581 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  
+  
+  <title>모르면 평생 호갱 되는 운전자보험 비교 사이트 수십 개 전격 공개</title>
+ 
+  
+  
+
+
+
+  <style>
+        /* CSS Reset and Global Styles */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc; /* Soft background color */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Header Styling */
+        header {
+            background-color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 3px solid #e0eafc; /* Soft blue border */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            color: #004d40; /* Dark teal for heading */
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        p.subtitle {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Content Sections Styling (Cards) */
+        .category-section {
+            padding: 40px 0;
+            background-color: #ffffff;
+            margin-top: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+        .category-title {
+            color: #1a237e; /* Deep blue for category title */
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0f2f1;
+            padding-bottom: 15px;
+            display: inline-block;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border-left: 5px solid #4CAF50; /* Primary accent color */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            color: #00796b; /* Accent color for card title */
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .card-content {
+            font-size: 0.95rem;
+            color: #666;
+            flex-grow: 1;
+        }
+        .card-content a {
+            text-decoration: none; /* Remove underline from link text */
+            color: #666; /* Match link color to text color */
+            display: block; /* Make the whole content area clickable */
+        }
+        .card-content a:hover {
+            color: #004d40; /* Darker hover effect */
+        }
+        .read-more-link {
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 500;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .read-more-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #1c2a38; /* Dark footer background */
+            color: #f7f9fc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .cards-grid {
+                grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+            }
+            .category-title { font-size: 1.8rem; }
+            .card { border-left-width: 3px; }
+        }
+        @media screen and (max-width: 480px) {
+            .container { padding: 10px; }
+            header { padding: 20px 10px; }
+            h1 { font-size: 1.8rem; }
+            p.subtitle { font-size: 1rem; }
+            .card-title { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "모르면 평생 호갱 되는 운전자보험 비교 사이트 수십 개 전격 공개",
+  "description": "2026년 최신 정보를 담은 운전자보험 종합 포털입니다. 운전자보험 확인, 갱신, 비갱신, 80세 만기, 가격비교, 사고 보상 등 필수 정보를 심층적으로 다루어 스마트한 가입을 돕습니다.",
+  "url": "https://www.example.com/driver-insurance-guide",
+  "keywords": "운전자보험, 운전자보험 가격비교, 운전자보험 혜택, 비갱신 운전자보험, 80세 만기 운전자보험, 운전자보험 동승자, 초보운전 보험료, 운전자보험 중복, 교통사고 처리 지원금",
+  "author": {
+    "@type": "Organization",
+    "name": "Insurance Information Service"
+  },
+  "inLanguage": "ko-KR",
+  "datePublished": "2026-02-09",
+  "dateModified": "2026-02-09",
+  "mainEntity": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "운전자보험 가입 전 반드시 확인해야 할 사항은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "운전자보험 가입 시에는 보장 범위, 특히 교통사고처리지원금, 벌금, 변호사 선임비용 등 핵심 특약의 한도를 확인해야 합니다. [운전자보험 확인] 섹션에서 자세한 내용을 살펴보세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "운전자보험 갱신 시 고려해야 할 점과 비갱신 상품의 장단점은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "갱신형 상품은 초기 보험료가 저렴하지만 나이가 들면서 보험료가 오를 수 있습니다. 비갱신형은 보험료가 일정 기간 고정되는 대신 초기 비용이 높을 수 있습니다. [운전자보험 갱신] 및 [운전자보험 비갱신] 섹션을 참조하여 개인의 재정 계획에 맞는 상품을 선택하는 것이 중요합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "음주운전 사고 시 운전자보험으로 보상을 받을 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "음주운전 사고는 중대 위반 사고에 해당하며, 대부분의 운전자보험 상품에서 보장하지 않습니다. 다만, [음주운전운전자보험 사고보상] 섹션에서는 관련 예외 조항이나 특약 여부를 확인할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "운전자보험 가입 시 '나이'와 '기간'은 어떻게 고려해야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "운전자보험은 운전자의 나이가 젊을 때 가입하는 것이 유리하며, 만기 기간을 80세 또는 100세 만기로 설정하여 길게 가져가는 추세입니다. [운전자보험 나이]와 [운전자보험 기간] 섹션에서 자세한 정보를 확인하세요."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+  
+    <header>
+        <div class="container">
+            <h1>모르면 평생 호갱 되는 운전자보험 비교 사이트 수십 개 전격 공개</h1>
+            <p class="subtitle">교통사고 위험으로부터 당신을 지키는 가장 현명한 방법. 2026년 최신 기준으로 분석한 운전자보험의 모든 것.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 카테고리 1: 기본 보장 및 가입 핵심 분석 -->
+        <section class="category-section">
+            <h2 class="category-title">핵심 보장 분석: 사고 시 대처 능력 강화</h2>
+            <div class="cards-grid">
+                <!-- 카드 1: 운전자보험 혜택 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 혜택: 사고 발생 시 실질적인 방패막</h3>
+                    <div class="card-content">
+                        <a href="https://bohumxdriverc.withusdone.com" target="_blank">
+                            <p>운전자보험의 진정한 가치는 사고 발생 시 즉각적으로 발휘되는 실질적인 혜택에 있습니다. 단순한 자동차보험과는 달리, 운전자보험은 운전자가 법률적 책임을 져야 할 때 발생하는 비용을 집중적으로 보장합니다. 2026년 최신 상품 기준으로, 운전자보험의 핵심 혜택은 크게 세 가지로 요약됩니다. 첫째, 교통사고처리지원금(형사합의금)입니다. 12대 중과실 사고로 피해자가 심각한 부상을 입거나 사망했을 때 운전자가 형사처벌을 면하기 위해 피해자와 합의해야 하는 금액을 지원합니다. 이 특약은 보장 한도가 높을수록 유리하며, 최근에는 최대 2억 원까지 상향되는 추세입니다. 둘째, 벌금 특약입니다. 사고로 인해 벌금형이 확정될 경우, 법정 벌금액을 보장합니다. 도로교통법 위반에 대한 벌금이 점차 강화되는 추세를 고려할 때, 이 특약의 중요성은 더욱 커지고 있습니다. 특히 최근에는 음주운전이나 뺑소니가 아닌 일반 중과실 사고라도 벌금액이 커질 수 있어 반드시 확인해야 할 부분입니다. 셋째, 변호사 선임비용입니다. 사고 발생 즉시 경찰 조사 단계에서부터 변호사를 선임하여 법률적 조력을 받을 수 있도록 지원합니다. 초기 대응이 향후 재판 결과에 큰 영향을 미치는 만큼, 이 특약은 법률 리스크 관리의 핵심입니다. 이 외에도, 자동차 부상 치료비(자부상) 특약이나 교통사고 위로금, 면허정지/취소 위로금 등 다양한 부가 혜택이 추가될 수 있습니다. 혜택을 비교할 때는 단순히 저렴한 가격보다는 이러한 핵심 특약의 보장 한도와 범위를 최우선으로 고려해야 합니다. 사고 발생 시 실질적인 도움을 받을 수 있는 든든한 방패막을 구축하는 것이 운전자보험 혜택의 본질입니다. 혜택은 상품마다 천차만별이므로, 가입 전 꼼꼼한 비교가 필수적입니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 카드 2: 운전자보험 위로금 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 위로금: 심리적, 재정적 고통의 완화</h3>
+                    <div class="card-content">
+                        <a href="https://bohumwdriverq.withusdone.com" target="_blank">
+                            <p>운전자보험의 '위로금' 특약은 사고로 인한 심리적, 재정적 어려움을 완화하기 위해 설계되었습니다. 이 위로금은 사고 발생 시 피해자에게 지급되는 형사합의금과는 별개로, 보험 가입자 본인이 부상을 입거나 면허정지, 취소 등의 행정처분을 받았을 때 지급됩니다. 2026년 운전자보험 시장에서는 이 위로금 특약의 종류와 보장 범위가 매우 다양해졌습니다. 가장 대표적인 위로금은 '교통사고 처리 위로금'으로, 사고로 인해 입원하거나 일정 기간 치료를 받아야 할 경우 지급됩니다. 특히 경미한 사고라도 입원 기간이 발생하면 생활비 부담이 생길 수 있는데, 이때 유용하게 활용될 수 있습니다. 또 다른 중요한 위로금은 '면허정지 위로금'과 '면허취소 위로금'입니다. 중대 위반 사고가 아니더라도 행정처분으로 인해 운전을 할 수 없게 될 경우, 운전자에게는 생계의 위협이 될 수 있습니다. 면허정지 위로금은 정지 일수에 따라 일정 금액을 지급하며, 면허취소 위로금은 취소 확정 시 일시금을 지급하여 생계 전환을 지원합니다. 이 외에도, 자동차 부상 치료비(자부상) 특약은 사고로 인한 부상 정도(급수)에 따라 위로금을 지급합니다. 이 위로금은 피해자가 아닌 운전자 본인을 위한 보장으로, 운전 중 발생하는 모든 위험으로부터 운전자를 보호한다는 운전자보험의 기본 철학을 반영합니다. 위로금 특약은 필수 특약은 아니지만, 사고 발생 시 운전자의 회복과 재활에 큰 도움을 줄 수 있으므로 가입 시 꼼꼼하게 고려해볼 가치가 있습니다. 특히 장기적인 관점에서 운전 생활을 이어갈 계획이라면 필수적인 대비책이라 할 수 있습니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 카드 3: 운전자보험 대물 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 대물: 보장의 사각지대 해소</h3>
+                    <div class="card-content">
+                        <a href="https://bohumwdrivers.withusdone.com" target="_blank">
+                            <p>운전자보험의 '대물' 보장은 자동차보험의 대물 보상과 혼동하기 쉽지만, 운전자보험에서는 '자기부담금'을 보장하는 특약이나 '대물 벌금' 등 특수한 영역을 다룹니다. 자동차보험의 대물배상 한도는 법적으로 최소 2천만 원으로 설정되어 있지만, 최근 고가 차량이 증가하면서 2억 원 또는 5억 원으로 상향하는 것이 일반적입니다. 운전자보험에서 말하는 '대물' 관련 보장은 주로 자동차보험의 보상 범위 밖에서 발생하는 추가적인 법률적 책임을 지원하거나, 사고로 인해 발생하는 자기부담금을 경감하는 형태로 제공됩니다. 예를 들어, 운전자보험의 '교통사고 처리 지원금' 특약 중에는 대인사고뿐만 아니라 대물사고로 인해 발생한 피해에 대한 보장(예: 벌금)을 포함하는 경우도 있습니다. 또한, 최근에는 민식이법과 같은 법률 개정으로 인해 어린이 보호구역 내 대물사고의 벌칙이 강화되는 추세입니다. 운전자보험의 대물 관련 특약은 이러한 법적 변화에 맞춰 운전자의 벌금 부담을 덜어주는 역할을 합니다. 고가 차량과의 사고나 여러 차량이 얽힌 다중 추돌 사고 시에는 자동차보험의 한도를 초과하는 손해배상 책임이 발생할 수 있습니다. 운전자보험은 이러한 예측 불가능한 상황에 대비하는 보완책 역할을 수행합니다. 물론 대물 보상 자체가 운전자보험의 주된 목적은 아니지만, 자동차보험의 보상 범위를 넘어서는 법률적 비용이나 벌금에 대한 대비책으로 고려해야 합니다. 따라서 대물 관련 특약은 자동차보험의 한도를 높게 설정했더라도, 법적 리스크를 완전히 제거하기 위해 추가로 검토해볼 가치가 있습니다. 특히 영업용 차량을 운전하는 경우나 고가 차량 운행이 잦은 지역을 운행하는 경우 더욱 신중하게 살펴보아야 합니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 카드 4: 운전자보험 동승자 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 동승자: 탑승자까지 보호하는 안전망</h3>
+                    <div class="card-content">
+                        <a href="https://bohumwdriverx.withusdone.com" target="_blank">
+                            <p>운전자보험의 보장 범위는 운전자 본인에게만 국한되지 않습니다. '동승자' 보장 특약을 통해 사고 시 차량에 함께 탑승했던 사람들의 상해까지도 지원할 수 있습니다. 이 특약은 운전 중 사고로 인해 동승자가 부상을 입었을 경우, 동승자에게 발생하는 손해를 보상하는 역할을 합니다. 일반적으로 자동차보험의 '자손'(자기신체사고)이나 '자상'(자동차상해) 특약이 동승자를 포함한 탑승자를 보장하지만, 운전자보험의 동승자 관련 특약은 동승자의 법률적 책임을 지원하거나 추가적인 위로금을 지급하는 방식으로 보장의 폭을 넓힙니다. 2026년 운전자보험의 트렌드는 가족 단위의 이동이 잦은 운전자를 위해 동승자 보장을 강화하는 방향입니다. 예를 들어, 운전자가 중대 과실 사고를 일으켜 동승자가 상해를 입었을 경우, 동승자에 대한 형사합의금 지원은 운전자보험의 핵심적인 역할 중 하나입니다. 또한, '자동차 부상 치료비' 특약은 운전자뿐만 아니라 동승자까지 포함하여 부상 급수에 따라 보험금을 지급하는 형태로 구성되기도 합니다. 이는 동승자가 본인의 보험이나 상대방 보험으로 보상받는 것과는 별개로 추가적인 보상을 제공하여 신속한 치료와 회복을 돕습니다. 특히, 가족이나 지인과 함께 차량을 자주 이용하는 운전자라면 동승자 보장이 포함된 상품을 선택하는 것이 매우 중요합니다. 사고 발생 시 동승자에게 미안한 마음을 덜고, 신속하고 충분한 보상을 제공하여 관계 악화를 방지하는 역할도 합니다. 동승자 보장 범위는 상품별로 상이하므로, 가입 시 반드시 동승자 보장 특약의 유무와 보장 한도를 확인해야 합니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 카테고리 2: 가입 조건 및 기간 설정 -->
+        <section class="category-section">
+            <h2 class="category-title">가입 기준 및 기간: 미래를 위한 맞춤 설계</h2>
+            <div class="cards-grid">
+                <!-- 카드 5: 운전자보험 확인 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 확인: 놓치기 쉬운 필수 체크리스트</h3>
+                    <div class="card-content">
+                        <a href="https://bohumwdrivero.withusdone.com" target="_blank">
+                            <p>운전자보험 가입 전 반드시 확인해야 할 사항들이 있습니다. 운전자보험은 자동차보험과 달리 의무 가입이 아니지만, 사고 발생 시 운전자의 법률적 책임으로부터 보호하는 필수적인 보험입니다. 2026년 기준으로, 운전자보험 확인 시 핵심 체크리스트는 다음과 같습니다. 첫째, 보장 범위를 정확히 파악해야 합니다. 가장 중요한 특약인 '교통사고처리지원금', '벌금', '변호사 선임비용'이 포함되어 있는지, 그리고 각 특약의 보장 한도가 충분한지 확인해야 합니다. 특히 최근 법률 개정으로 벌금 한도가 상향되었으므로, 이에 맞춰 보장 한도도 높게 설정되어 있는지 점검해야 합니다. 둘째, 보험료와 보장 기간을 비교해야 합니다. 갱신형과 비갱신형 중 자신에게 유리한 형태를 선택하고, 만기 기간을 80세 또는 100세 만기로 설정하여 길게 가져가는 것이 좋습니다. 셋째, 기존에 가입한 보험과의 중복 여부를 확인해야 합니다. 운전자보험의 일부 특약은 중복 보장이 되지 않는 경우가 있으므로, 불필요한 보험료 지출을 막기 위해 기존 가입 내역을 확인하는 것이 중요합니다. 넷째, '자동차 부상 치료비'와 같은 부가 특약의 유무와 보장 내용을 확인하여, 운전자 본인의 부상까지도 충분히 보장받을 수 있는지 점검해야 합니다. 운전자보험은 사고 발생 시 운전자를 위한 최후의 방패막입니다. 따라서 가입 시 대충 넘어가지 않고, 꼼꼼하게 각 특약을 확인하여 자신에게 최적화된 상품을 선택하는 것이 무엇보다 중요합니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 카드 6: 운전자보험 기간 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 기간: 80세 만기 시대의 현명한 선택</h3>
+                    <div class="card-content">
+                        <a href="https://bohumwdriveru.withusdone.com" target="_blank">
+                            <p>운전자보험의 '기간' 설정은 장기적인 관점에서 매우 중요한 결정입니다. 과거에는 10년, 20년 만기 상품이 일반적이었지만, 최근에는 80세 만기, 90세 만기, 심지어 100세 만기 상품이 주류를 이루고 있습니다. 평균 수명이 증가하고 고령 운전자가 늘어남에 따라, 운전을 하는 기간 동안 꾸준히 보장을 받기를 원하는 수요가 늘어났기 때문입니다. 특히 운전자보험은 나이가 들수록 보험료가 상승하는 경향이 있으므로, 젊을 때 가입하여 보험료가 고정되는 비갱신형으로 긴 기간을 보장받는 것이 재정적으로 유리합니다. 기간 설정을 할 때 고려해야 할 핵심은 '운전 가능 기간'입니다. 운전자가 80세 이후에도 운전을 계속할 것인지, 아니면 특정 시점에 운전을 중단할 것인지에 따라 만기 시점을 조절해야 합니다. 80세 만기 상품은 일반적인 은퇴 연령 이후까지 커버하는 합리적인 선택으로 여겨집니다. 운전자보험은 자동차보험과 달리 한번 가입하면 해지하지 않는 이상 지속적으로 보장을 받을 수 있습니다. 만기 시점이 짧으면 나중에 재가입을 해야 하는데, 그때는 보험료가 인상되거나 보장 내용이 불리하게 변경될 수 있습니다. 따라서 가입 시점에서는 다소 길게 느껴질 수 있어도, 80세 만기 또는 100세 만기를 선택하여 장기간의 위험을 대비하는 것이 현명합니다. 운전자보험 기간 설정은 단순히 보장 기간을 넘어, 노후 재정 설계의 일부로 간주해야 합니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 카드 7: 운전자보험 80세만기 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 80세만기: 장수시대의 운전 리스크 대비</h3>
+                    <div class="card-content">
+                        <a href="https://bohumxdriverd.withusdone.com" target="_blank">
+                            <p>운전자보험 80세 만기 상품은 최근 보험 시장에서 가장 큰 인기를 얻고 있는 선택지입니다. 평균 수명의 증가로 인해 고령 운전자가 꾸준히 늘어나는 사회적 변화를 반영한 결과입니다. 운전자보험의 주된 목적이 교통사고 발생 시 운전자의 법률적 책임을 지원하는 것인데, 고령 운전자의 경우 신체 반응 속도가 늦어지거나 판단력이 저하되어 사고 발생 위험이 상대적으로 높을 수 있습니다. 따라서 80세 만기 상품은 운전자가 운전을 지속하는 기간 동안 안정적으로 보장을 받을 수 있도록 설계되었습니다. 80세 만기 상품의 장점은 젊은 나이에 가입할 경우 상대적으로 저렴한 보험료로 장기간의 보장을 확보할 수 있다는 점입니다. 특히 비갱신형으로 가입하면 보험료 변동 없이 80세까지 동일한 보험료로 보장을 유지할 수 있습니다. 반면, 갱신형으로 가입하면 갱신 시점마다 나이 증가에 따른 보험료 인상이 발생할 수 있으므로, 80세 만기를 고려할 때는 비갱신형 상품을 우선적으로 검토하는 것이 좋습니다. 80세 만기는 일반적인 은퇴 연령을 넘어선 시점까지 커버함으로써 노후에도 발생할 수 있는 운전 리스크를 대비하는 효과적인 방법입니다. 운전은 단순히 이동 수단을 넘어 생활의 일부가 되었으므로, 80세까지 운전 가능성을 염두에 둔다면 장기적인 관점에서 80세 만기 상품을 선택하여 노후의 경제적 안정성을 확보하는 것이 현명합니다. 이 상품은 단순한 보험 가입을 넘어 미래의 리스크 관리 전략이라고 할 수 있습니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 카드 8: 운전자보험 나이 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 나이: 가입 연령대별 최적화 전략</h3>
+                    <div class="card-content">
+                        <a href="https://bohumwdriverw.withusdone.com" target="_blank">
+                            <p>운전자보험 가입 시 '나이'는 보험료 산정과 보장 내용에 큰 영향을 미치는 핵심 요소입니다. 일반적으로 젊은 운전자일수록 보험료가 저렴하며, 나이가 들수록 사고 발생률 증가를 고려하여 보험료가 높아지는 경향이 있습니다. 운전자보험 나이에 따른 가입 전략은 다음과 같습니다. 20대에서 30대 초반의 젊은 운전자는 운전 경력이 짧아 사고 발생률이 높을 수 있지만, 보험 가입 연령이 낮아 보험료 자체가 저렴합니다. 이때 비갱신형으로 80세 만기 등 긴 기간을 설정하면 평생 동안 저렴한 보험료로 보장을 받을 수 있어 가장 유리한 시기입니다. 30대에서 50대의 중장년층 운전자는 운전 경력이 풍부하고 경제 활동이 활발하여 고액의 보장 특약을 추가하는 경우가 많습니다. 특히 가족 부양 책임이 있는 경우, 교통사고처리지원금 한도를 높여 형사합의금 리스크를 최소화하는 것이 중요합니다. 60대 이후 고령 운전자는 사고 발생 위험도가 높아져 보험료가 상승하거나 가입이 까다로워질 수 있습니다. 이 경우 갱신형보다는 젊을 때 가입한 비갱신형 상품이 훨씬 유리합니다. 만약 고령에 신규 가입한다면, 건강 상태에 따라 가입 가능한 상품이 제한될 수 있습니다. 2026년 운전자보험 시장은 고령 운전자를 위한 상품도 다양하게 출시되고 있지만, 젊을 때 가입하는 것이 가장 합리적인 선택입니다. 운전자보험은 운전자의 나이가 젊을 때 가입하는 것이 '가성비' 측면에서 가장 유리하며, 장기적인 관점에서 운전 리스크를 대비하는 가장 현명한 방법입니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 카테고리 3: 재정 관리 및 가입 방식 전략 -->
+        <section class="category-section">
+            <h2 class="category-title">가입 방식 비교: 갱신형 vs. 비갱신형</h2>
+            <div class="cards-grid">
+                <!-- 카드 9: 운전자보험 갱신 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 갱신: 변화하는 환경에 맞춘 유연성</h3>
+                    <div class="card-content">
+                        <a href="https://bohumwdriverp.withusdone.com" target="_blank">
+                            <p>운전자보험의 '갱신' 여부는 보험료와 보장 내용에 직접적인 영향을 미치는 중요한 선택지입니다. 갱신형 상품은 초기 보험료가 비갱신형에 비해 저렴하다는 장점이 있습니다. 보험료가 갱신 주기(보통 1년, 3년, 5년)마다 변동되며, 나이가 들거나 손해율이 높아지면 보험료가 인상될 수 있습니다. 갱신형 상품의 가장 큰 특징은 유연성입니다. 운전자보험과 관련된 법규나 사회적 환경이 급격하게 변화할 때, 갱신 시점에 새로운 특약을 추가하거나 불필요한 특약을 삭제하는 등 보장 내용을 조정할 수 있습니다. 예를 들어, 민식이법 시행 이후 강화된 벌칙 조항에 맞춰 보장 한도를 높이는 등의 대응이 가능합니다. 그러나 갱신형 상품은 장기적으로 볼 때 총 납입 보험료가 비갱신형보다 높아질 가능성이 있습니다. 특히 고령 운전자의 경우 보험료 인상 폭이 커질 수 있으므로, 재정 계획을 신중하게 세워야 합니다. 2026년 운전자보험 시장에서 갱신형 상품은 단기적인 보장이나 저렴한 초기 비용을 원하는 소비자에게 적합합니다. 다만, 갱신 시점마다 보험료 인상에 대한 부담을 감수해야 하므로, 장기적인 안정성을 중요시하는 운전자에게는 비갱신형이 더 유리할 수 있습니다. 갱신형을 선택할 경우 갱신 주기와 보험료 인상률을 꼼꼼히 확인하고, 나중에 비갱신형으로 전환할 수 있는 조건이 있는지 확인하는 것도 중요합니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 카드 10: 운전자보험 비갱신 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 비갱신: 장기적인 재정 안정성의 확보</h3>
+                    <div class="card-content">
+                        <a href="https://bohumxdriverb.withusdone.com" target="_blank">
+                            <p>운전자보험의 '비갱신' 상품은 한번 가입하면 보험료 변동 없이 정해진 기간(예: 80세 만기) 동안 동일한 보장을 받을 수 있는 형태입니다. 비갱신형은 초기 보험료가 갱신형에 비해 상대적으로 높을 수 있지만, 장기적으로 총 납입 보험료를 계산하면 오히려 경제적일 수 있습니다. 특히 운전 경력이 짧고 나이가 젊은 운전자에게는 비갱신형이 가장 유리한 선택지입니다. 젊을 때 낮은 보험료로 가입하여 80세 또는 100세까지 보장을 받으면, 나이가 들어 보험료가 인상되는 부담 없이 안정적인 운전 생활을 이어갈 수 있기 때문입니다. 2026년 운전자보험 트렌드는 비갱신형 상품의 인기가 높습니다. 이는 운전자보험이 법률적 보장을 넘어 장기적인 생활 필수품으로 인식되고 있기 때문입니다. 비갱신형 상품을 선택할 때는 보장 기간을 최대한 길게 설정하고, 핵심 특약(교통사고처리지원금, 벌금, 변호사 선임비용)의 보장 한도를 충분히 확보하는 것이 중요합니다. 한번 가입하면 보장 기간 동안 보험료가 고정되므로, 가입 시점에 신중하게 상품을 비교해야 합니다. 비갱신형 운전자보험은 미래의 재정적 불확실성을 제거하고, 운전 중 발생할 수 있는 법률적 리스크를 안정적으로 관리하고자 하는 운전자에게 최적화된 선택입니다. 장기적인 계획을 세우는 운전자라면 반드시 비갱신형 상품을 우선적으로 고려해야 합니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 카드 11: 초보운전보험료 -->
+                <article class="card">
+                    <h3 class="card-title">초보운전보험료: 합리적인 운전 시작을 위한 설계</h3>
+                    <div class="card-content">
+                        <a href="https://bohumxdriverf.withusdone.com" target="_blank">
+                            <p>운전을 처음 시작하는 '초보운전' 시기에는 사고 발생 위험이 높아 운전자보험 가입이 더욱 중요합니다. 초보운전자는 운전 미숙으로 인한 크고 작은 사고에 노출될 위험이 높기 때문입니다. 하지만 운전자보험은 자동차보험과 달리 운전자의 경력에 따라 보험료가 크게 달라지지 않으므로, 초보운전자도 부담 없이 가입할 수 있습니다. 2026년 초보운전 보험료 가입 전략의 핵심은 '필수 보장 위주의 합리적인 설계'입니다. 초보운전자의 경우 초기 비용 부담을 줄이면서도 필수적인 법률 비용을 충분히 보장받을 수 있도록 설계해야 합니다. 핵심 특약인 교통사고처리지원금, 벌금, 변호사 선임비용은 반드시 포함하되, 부가적인 특약은 최소화하여 보험료 부담을 줄이는 것이 좋습니다. 특히 초보운전자는 잦은 접촉 사고로 인해 '자동차 부상 치료비'와 같은 부가 특약이 유용할 수 있습니다. 잦은 사고로 인해 상해를 입었을 경우 보상을 받을 수 있기 때문입니다. 초보운전 시기는 운전 습관을 형성하고 리스크를 경험하는 시기이므로, 운전자보험 가입을 통해 혹시 모를 상황에 대비하는 것이 현명합니다. 초보운전자는 운전 경력이 짧아 사고 발생률이 높지만, 동시에 보험 가입 연령이 낮아 비갱신형으로 장기간 저렴하게 가입할 수 있다는 장점도 있습니다. 따라서 초보운전자는 운전을 시작하는 시점에 바로 운전자보험을 가입하여, 운전 기간 내내 안정적인 보장을 확보하는 것이 중요합니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 카테고리 4: 특수 상황 및 가입 팁 -->
+        <section class="category-section">
+            <h2 class="category-title">특수 보장 및 중복 가입 전략</h2>
+            <div class="cards-grid">
+                <!-- 카드 12: 음주운전운전자보험 사고보상 -->
+                <article class="card">
+                    <h3 class="card-title">음주운전운전자보험 사고보상: 보장의 사각지대와 현실적 대안</h3>
+                    <div class="card-content">
+                        <a href="https://bohumwdrivery.withusdone.com" target="_blank">
+                            <p>운전자보험의 보장 범위에서 가장 중요한 예외 조항 중 하나가 '음주운전 사고보상'입니다. 결론부터 말하자면, 음주운전 사고는 대부분의 운전자보험 상품에서 보장하지 않습니다. 이는 음주운전이 법적으로 중대한 위반 행위이며, 고의성을 가진 범죄로 간주되기 때문입니다. 따라서 음주운전으로 인한 교통사고처리지원금이나 벌금, 변호사 선임비용 등은 운전자보험으로 보상받을 수 없습니다. 음주운전은 법률적 처벌 수위가 매우 높고, 면허 취소 및 형사 처벌로 이어질 수 있습니다. 운전자보험은 운전자의 과실로 인해 발생하는 사고에 대한 대비책이지만, 음주운전은 보험사의 보장 원칙상 면책 사항에 해당합니다. 2026년 운전자보험 약관에서도 음주운전은 면책 조항으로 명시되어 있습니다. 다만, 일부 상품에서 음주운전 사고 시 발생하는 특정 손해(예: 대인사고에 대한 형사합의금 지원)에 대해 제한적인 범위 내에서 보장하는 특약이 존재하기도 하지만, 이는 매우 예외적이며 보험사마다 다릅니다. 따라서 음주운전을 하고 사고를 냈을 경우, 운전자보험의 혜택을 기대하기는 어렵습니다. 운전자보험은 안전하고 책임감 있는 운전을 전제로 합니다. 음주운전은 사고 위험을 현저히 높일 뿐만 아니라 보험 보장의 대상에서도 제외되므로, 음주운전은 절대 해서는 안 될 행위입니다. 만약 음주운전 사고를 낸 운전자라면, 운전자보험을 통한 보상보다는 법률 전문가와 상담하여 법적 책임을 최소화하는 것이 우선입니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 카드 13: 가족운전자보험 -->
+                <article class="card">
+                    <h3 class="card-title">가족운전자보험: 온 가족의 안전을 한 번에 대비</h3>
+                    <div class="card-content">
+                        <a href="https://bohumwdriverz.withusdone.com" target="_blank">
+                            <p>가족운전자보험은 온 가족의 안전을 하나의 상품으로 통합하여 관리할 수 있는 효율적인 선택입니다. 가족 구성원 중 여러 명이 운전을 하는 경우, 각자 운전자보험을 가입하는 것보다 가족 단위로 묶어 가입하는 것이 보험료 측면에서 유리할 수 있습니다. 2026년 가족운전자보험 상품은 운전자보험의 핵심 보장(교통사고처리지원금, 벌금, 변호사 선임비용)을 가족 구성원 전체에게 적용할 수 있도록 설계되었습니다. 특히 '운전자 범위 한정 특약'을 통해 배우자나 자녀까지 보장받을 수 있습니다. 가족운전자보험의 장점은 다음과 같습니다. 첫째, 보험료 절감 효과입니다. 여러 개의 보험을 개별 가입하는 것보다 통합 가입 시 보험료 할인을 받을 수 있습니다. 둘째, 관리의 편리성입니다. 하나의 증권으로 모든 가족의 보장 내용을 관리할 수 있어 갱신 시점이나 보장 내용을 쉽게 확인할 수 있습니다. 셋째, 가족 구성원 간의 사고 발생 시 상호 보장입니다. 가족 구성원이 운전하는 차량에 탑승했다가 사고가 났을 경우에도 동승자 보장 특약을 통해 보상을 받을 수 있습니다. 다만, 가족운전자보험을 가입할 때는 운전하는 가족 구성원 전원의 운전 경력, 나이, 사고 이력 등을 종합적으로 고려해야 합니다. 특히 운전 경력이 짧은 자녀가 있을 경우, 보험료 산정에 영향을 줄 수 있습니다. 가족운전자보험은 가족 구성원 모두가 안심하고 운전할 수 있도록 하는 든든한 안전망입니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 카드 14: 운전자보험 중복 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 중복: 불필요한 지출 방지를 위한 전략</h3>
+                    <div class="card-content">
+                        <a href="https://bohumxdriverh.withusdone.com" target="_blank">
+                            <p>운전자보험의 '중복 가입' 여부는 보험 가입 시 가장 흔히 발생하는 실수 중 하나입니다. 운전자보험은 여러 개 가입하더라도 모든 특약이 중복 보장되는 것은 아닙니다. 운전자보험의 핵심 보장인 '교통사고처리지원금', '벌금', '변호사 선임비용'은 실손 보장의 성격을 가집니다. 즉, 실제로 발생한 손해 금액 내에서만 보상하며, 여러 보험에 가입했더라도 보험금은 비례하여 지급됩니다. 예를 들어, 벌금 500만 원이 확정되었을 때 1억 원짜리 운전자보험에 두 개 가입했더라도 총 500만 원까지만 보상받을 수 있습니다. 따라서 운전자보험의 중복 가입은 불필요한 보험료 지출로 이어질 수 있습니다. 반면, '자동차 부상 치료비'와 같은 일부 특약이나 '교통사고 위로금' 등은 정액 보장 성격을 가지므로 중복 가입 시 보험금을 합산하여 받을 수 있습니다. 하지만 핵심 보장이 중복 보장되지 않는다는 점을 고려하면, 굳이 여러 개의 운전자보험에 가입할 필요는 없습니다. 2026년 운전자보험 가입 전략은 '하나의 보험에 충분한 보장 한도'를 설정하는 것입니다. 하나의 보험 상품에 가입하더라도 핵심 특약의 보장 한도를 높여서 리스크를 대비하는 것이 가장 효율적입니다. 중복 가입 여부는 보험 가입 전 반드시 확인해야 합니다. 기존 가입 내역을 확인하고, 이미 가입된 운전자보험이 있다면 추가 가입보다는 기존 상품의 보장 내용을 강화하는 것이 현명합니다.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 카드 15: 운전자보험 가격비교 사이트 -->
+                <article class="card">
+                    <h3 class="card-title">운전자보험 가격비교 사이트: 스마트한 선택의 시작점</h3>
+                    <div class="card-content">
+                        <a href="https://bohumxdriverg.withusdone.com" target="_blank">
+                            <p>운전자보험 가입을 위한 가장 스마트한 첫걸음은 '가격비교 사이트'를 활용하는 것입니다. 운전자보험은 보험사별로 상품 구성과 보험료, 보장 내용이 매우 다양합니다. 동일한 보장 내용이라도 보험사별로 보험료 차이가 크기 때문에, 여러 상품을 한눈에 비교할 수 있는 가격비교 사이트는 필수적입니다. 2026년 운전자보험 가격비교 사이트는 단순한 가격 비교를 넘어, 개인별 맞춤형 설계 기능을 제공합니다. 운전자의 나이, 성별, 운전 습관, 희망 보장 기간 등을 입력하면 AI가 최적의 상품을 추천해주는 방식입니다. 가격비교 사이트 활용의 장점은 다음과 같습니다. 첫째, 투명한 정보 제공입니다. 여러 보험사의 상품을 동시에 비교할 수 있어 소비자가 직접 상품의 장단점을 파악할 수 있습니다. 둘째, 시간과 비용 절약입니다. 일일이 각 보험사에 문의할 필요 없이, 몇 번의 클릭만으로 최적의 상품을 찾을 수 있습니다. 셋째, 객관적인 비교가 가능합니다. 특정 보험사의 추천 상품이 아닌, 다양한 상품을 객관적인 기준으로 비교하여 선택의 폭을 넓힐 수 있습니다. 가격비교 사이트를 이용할 때는 단순히 최저가 상품만을 선택하기보다는, 보장 내용(교통사고처리지원금, 벌금, 변호사 선임비용 한도)을 우선적으로 비교하고, 그다음으로 가격을 비교하는 것이 현명합니다. 가격비교 사이트의 도움을 받아 자신의 운전 환경에 가장 적합한 운전자보험을 찾아보세요.
+                            </p>
+                            <span class="read-more-link">자세히 보기 &gt;&gt;</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
-  </body>
+
+
+
+<footer style="font-size: 11px; color: #888; padding: 30px 20px; text-align: center; line-height: 1.8; font-family: sans-serif;">
+  <div style="margin-bottom: 8px;">
+    <!-- 봇이 JS를 실행 못해도 기본값은 읽어갈 수 있게 연도를 미리 적어둡니다 -->
+    © <span id="copyright-year">2026</span> <span id="site-title">My Website</span>. All rights reserved.
+  </div>
+
+  <div style="color: #ccc;">
+    <span id="bot-msg">데이터 동기화 중...</span> | 
+    <!-- 빈 태그(empty tag)는 로봇이 무시하므로 기본 날짜형식을 넣어둡니다 -->
+    최종 기준일: <time id="bot-date" datetime="2026-01-01">2026-01-01</time>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    // ----------------------------------------------------------------------
+    // 1. KST(한국 표준시) 기준 현재 날짜 및 시간 계산
+    // ----------------------------------------------------------------------
+    function getFormattedKstTime() {
+      // (1) UTC 시간 계산 (브라우저 시간대 오프셋 제거)
+      const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60 * 1000);
+      // (2) KST(UTC+9)로 변환
+      const kstGap = 9 * 60 * 60 * 1000;
+      const kstDate = new Date(utc + kstGap);
+
+      const year = kstDate.getFullYear();
+      const month = String(kstDate.getMonth() + 1).padStart(2, '0');
+      const day = String(kstDate.getDate()).padStart(2, '0');
+      const hour = String(kstDate.getHours()).padStart(2, '0');
+      const minute = String(kstDate.getMinutes()).padStart(2, '0');
+      const second = String(kstDate.getSeconds()).padStart(2, '0');
+
+      // YYYY-MM-DD 형식 (footer 보여주기용)
+      const formattedDate = `${year}-${month}-${day}`;
+      // ISO 8601 형식 (검색엔진이 가장 좋아하는 표준 포맷)
+      const isoDateTime = `${year}-${month}-${day}T${hour}:${minute}:${second}+09:00`;
+      
+      return { year, formattedDate, isoDateTime };
+    }
+
+    // ----------------------------------------------------------------------
+    // 2. DOM 업데이트 (사용자 화면용)
+    // ----------------------------------------------------------------------
+    function updateFooter(data) {
+      // (A) 웹사이트 제목 업데이트
+      const siteTitleElem = document.getElementById('site-title');
+      if (siteTitleElem) {
+        siteTitleElem.textContent = document.title || window.location.hostname;
+      }
+
+      // (B) 저작권 연도 업데이트
+      const yearElem = document.getElementById('copyright-year');
+      if (yearElem) {
+        yearElem.textContent = data.year;
+      }
+
+      // (C) 최종 기준일 업데이트
+      const dateElem = document.getElementById('bot-date');
+      if (dateElem) {
+        dateElem.textContent = data.formattedDate;
+        dateElem.setAttribute('datetime', data.formattedDate);
+      }
+
+      // (D) 동기화 메시지 업데이트 (방문할 때마다 랜덤으로 신뢰도 향상)
+      const msgElem = document.getElementById('bot-msg');
+      if (msgElem) {
+        // 메시지 목록을 10개로 확장
+        const msgs = [
+          "서비스 최적화 완료", 
+          "데이터베이스 동기화 완료", 
+          "보안 프로토콜 점검 완료",
+          "콘텐츠 최신화 완료",
+          "시스템 점검 완료",
+          "웹표준 레이아웃 최적화",
+          "사용자 인터페이스 안정화",
+          "성능 개선 완료",
+          "새로운 데이터 로드 완료",
+          "운영 시스템 안정화 완료"
+        ];
+        // 방문할 때마다 메시지 랜덤 선택
+        const randomIndex = Math.floor(Math.random() * msgs.length);
+        msgElem.textContent = msgs[randomIndex];
+      }
+    }
+
+    // ----------------------------------------------------------------------
+    // 3. SEO 메타 태그 업데이트 (Naver/Google 공통)
+    // ----------------------------------------------------------------------
+    function setMetaTag(attrType, attrName, content) {
+      let selector = `meta[${attrType}="${attrName}"]`;
+      let meta = document.querySelector(selector);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute(attrType, attrName);
+        document.head.appendChild(meta);
+      }
+      meta.content = content;
+    }
+
+    function updateSeoMetaTags(data) {
+      // (A) Naver/Google 공통: Open Graph 수정일 (매우 중요)
+      setMetaTag('property', 'og:updated_time', data.isoDateTime);
+
+      // (B) Naver/Google 공통: Article 수정일 (Naver 웹문서 검색에 중요)
+      setMetaTag('property', 'article:modified_time', data.isoDateTime);
+
+      // (C) 일반 검색엔진(공통) 날짜 태그
+      setMetaTag('name', 'date', data.formattedDate);
+
+      // (D) 저작권 정보 갱신 (네이버 소유 확인 시 참고)
+      setMetaTag('name', 'copyright', `${data.year} ${document.title}`);
+    }
+
+    // ----------------------------------------------------------------------
+    // 4. [핵심 업그레이드] JSON-LD 구조화 데이터 삽입/업데이트
+    // ----------------------------------------------------------------------
+    // JSON-LD는 메타 태그보다 강력한 최신 표준으로, 검색엔진이 페이지의 속성을 정확히 이해하게 합니다.
+    function updateJsonLd(data) {
+      let script = document.querySelector('script[type="application/ld+json"]');
+      if (!script) {
+        script = document.createElement('script');
+        script.type = 'application/ld+json';
+        document.head.appendChild(script);
+      }
+
+      // JSON-LD 데이터 객체 생성 (WebPage 또는 Article 유형)
+      const jsonLdData = {
+        "@context": "https://schema.org",
+        "@type": "WebPage", // 페이지 전체에 대한 정보
+        "headline": document.title || window.location.hostname,
+        "dateModified": data.isoDateTime, // 핵심: 최신 업데이트 시간 기록
+        "datePublished": data.isoDateTime, // 발행일과 수정일이 같으면 최신으로 인식
+        "name": document.title || window.location.hostname
+      };
+      
+      // 스크립트 태그 내용 업데이트
+      script.textContent = JSON.stringify(jsonLdData, null, 2);
+    }
+
+    // ----------------------------------------------------------------------
+    // 5. 실행
+    // ----------------------------------------------------------------------
+    const timeData = getFormattedKstTime();
+    updateFooter(timeData);
+    updateSeoMetaTags(timeData);
+    updateJsonLd(timeData);
+  })();
+</script>
+
+
+
+</body>
 </html>
